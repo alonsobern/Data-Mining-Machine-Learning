@@ -1,10 +1,12 @@
 # Predicting Banana Quality using Machine Learning
 
 ### 📝 Overview
-This notebook will introduce some foundation machine learning and data science concepts by exploring the quality of bananas **classification.** It is intended to be an end-to-end example of what a data science and machine learning proof of concept might look like.
+This notebook will introduce some foundation machine learning and data science concepts by exploring the quality of bananas **classification.** It is intended to be an end-to-end example of what a data science and machine learning **proof of concept** might look like.
+
+Using machine learning techniques, I have developed a model to predict banana quality based on historical data.
 
 ### 📂 Data Source
-Customer Shopping Trends Dataset
+Banana Quality - Kaggle
 
 ### 🛠️ 𝐓𝐞𝐜𝐡 𝐒𝐭𝐚𝐜𝐤
 - Power BI
