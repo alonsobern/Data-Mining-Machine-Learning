@@ -27,4 +27,4 @@ The tabular dataset holds numerical attributes describing the quality of bananas
 - Data cleaning and preprocessing 
 - Feature engineering
 - Model training and evaluation
-- Visualization of results
+- Visualisation of results
