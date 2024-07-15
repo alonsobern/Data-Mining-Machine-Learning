@@ -5,12 +5,12 @@ This notebook will introduce some foundation machine learning and data science c
 
 Using machine learning techniques, I have developed a model to predict banana quality based on historical data.
 
-### 📂 Data Source
+### 📂 Data Source:
 Banana Quality - Kaggle
 
 The tabular dataset holds numerical attributes describing the quality of bananas, including their size, weight, sweetness (Brix), acidity (pH), softness, harvest time, and ripeness. 
 
-### 🛠️ 𝐓𝐞𝐜𝐡 𝐒𝐭𝐚𝐜𝐤
+### 🛠️ 𝐓𝐞𝐜𝐡 𝐒𝐭𝐚𝐜𝐤:
 - Python
 - Pandas and NumPy for data manipulation
 - Scikit-learn for model building
