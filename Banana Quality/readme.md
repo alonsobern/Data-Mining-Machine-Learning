@@ -1,7 +1,7 @@
 # Predicting Banana Quality using Machine Learning
 
 ### 📝 Overview
-This notebook will introduce some foundation machine learning and data science concepts by exploring the quality of bananas **classification.** It is intended to be an end-to-end example of what a data science and machine learning **proof of concept** might look like.
+This notebook will introduce some foundation machine learning and data science concepts by exploring the quality of bananas **classification.** It is intended to be an end-to-end example of what a data science and machine learning proof of concept might look like.
 
 ### 📂 Data Source
 Customer Shopping Trends Dataset
