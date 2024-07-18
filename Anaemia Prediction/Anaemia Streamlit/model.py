@@ -35,19 +35,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 # Columns to be scaled
 numeric_features = ["red_pixel", "green_pixel", "blue_pixel","hb"]
 
-# Column to be binned and one-hot encoded
-categorical_features = ["sex"]
-
-# Columns to be scaled
-numeric_features = ["red_pixel", "green_pixel", "blue_pixel","hb"]
-
-# Column to be binned and one-hot encoded
-categorical_features = ["sex"]
-
-# Columns to be scaled
-numeric_features = ["red_pixel", "green_pixel", "blue_pixel","hb"]
-
-# Column to be binned and one-hot encoded
+# Column to be one-hot encoded
 categorical_features = ["sex"]
 
 # Creating transformers
