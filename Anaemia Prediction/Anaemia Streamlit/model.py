@@ -1,13 +1,13 @@
 import pandas as pd
-import numpy as np
 import joblib
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.metrics import RocCurveDisplay, accuracy_score, confusion_matrix, classification_report
-from sklearn.model_selection import train_test_split, cross_val_score, learning_curve
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
+# Loading the dataset
 AnaemiaData = pd.read_csv("../Dataset/anaemia_dataset.csv")
 
 # Renaming columns
@@ -24,18 +24,10 @@ AnaemiaData.drop("number", axis=1, inplace=True)
 # Standardising the values in the sex category
 AnaemiaData['sex'] = AnaemiaData['sex'].replace(['M ', 'F '],['M','F'])
 
-# Selecting our X and y
-X = AnaemiaData.drop('anaemic', axis=1)
-y = AnaemiaData['anaemic']
-
-# Splitting data into train and test sets
-# 70% training and 30% test
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
 # Columns to be scaled
 numeric_features = ["red_pixel", "green_pixel", "blue_pixel","hb"]
 
-# Column to be one-hot encoded
+# Column to be binned and one-hot encoded
 categorical_features = ["sex"]
 
 # Creating transformers
@@ -50,16 +42,23 @@ preprocessor = ColumnTransformer(transformers=[('num', numeric_transformer, nume
 pipeline = Pipeline(steps=[('preprocessor', preprocessor),
                            ('classifier', LogisticRegression())]).set_output(transform='pandas')
 
+# Selecting our X and y
+X = AnaemiaData.drop('anaemic', axis=1)
+y = AnaemiaData['anaemic']
+
+# Splitting data into train and test sets
+# 70% training and 30% test
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
 # Training the classifier on the training data
 pipeline.fit(X_train, y_train)
 
 # Predicting on the test set
 y_pred = pipeline.predict(X_test)
-y_pred_prob = pipeline.predict_proba(X_test)[:,1]
 
 # Calculating accuracy
 acc_score = accuracy_score(y_test, y_pred)
-print(f"Accuracy: {acc_score}") # Accuracy: 0.9687
+print(f"Accuracy: {acc_score}") # Accuracy: 0.96875
 
 # save the model to disk
 joblib.dump(pipeline, "model/log_reg_model.sav")
