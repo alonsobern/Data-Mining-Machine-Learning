@@ -1,9 +1,9 @@
 # Anaemia Prediction using Machine Learning
 
 ### 📝 Overview
-This notebook will introduce some foundation machine learning and data science concepts by exploring %RBC prints and Hemoglobin level for classifying whether an individual tends to have anaemia or not. It is intended to be an end-to-end example of what a data science and machine learning **proof of concept** might look like.
+This notebook will introduce some foundation machine learning and data science concepts by exploring %RBC Prints and Hemoglobin levels for classifying whether an individual tends to have anaemia or not. It is intended to be an end-to-end example of what a data science and machine learning **proof of concept** might look like.
 
-Using machine learning techniques, I have developed a model to predict anaemia based on historical data. Each row in the dataset corresponds to an individual case with various features.
+Using machine learning techniques, I have deployed a model with **Streamlit** in order to predict anaemia based on historical data. Each row in the dataset corresponds to an individual case with various features.
 
 ### 📂 Data Source:
 Anaemia Prediction using Hb, Sex, %RBC Prints - Kaggle
