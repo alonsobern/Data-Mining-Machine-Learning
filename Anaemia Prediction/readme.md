@@ -29,4 +29,4 @@ This dataset is curated to facilitate the development of machine learning models
 - Feature engineering
 - Model training and evaluation
 - Visualisation of results
-- Deploying model in a webapp
+- Deploying a model with Streamlit
