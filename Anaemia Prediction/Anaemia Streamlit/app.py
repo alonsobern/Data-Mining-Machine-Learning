@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from prediction import predict
 
 st.title('Predicting Anaemia Disease')
-st.markdown('Demo model to classify whether an individual could tend to have anaemia or not')
+st.markdown('Demo model to predict whether an individual could tend to have anaemia or not')
 
 st.header('Anaemia Features')
 col1, col2 = st.columns(2)
