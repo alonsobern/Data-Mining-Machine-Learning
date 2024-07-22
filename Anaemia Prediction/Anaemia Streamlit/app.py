@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from prediction import predict
 
-st.title('Classifying Anaemia Disease')
+st.title('Predicting Anaemia Disease')
 st.markdown('Demo model to classify whether an individual could tend to have anaemia or not')
 
 st.header('Anaemia Features')
