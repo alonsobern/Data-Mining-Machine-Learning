@@ -1,14 +1,14 @@
 # Anaemia Prediction using Machine Learning
 
 ### 📝 Overview
-This notebook will introduce some foundation machine learning and data science concepts by exploring the quality of bananas **classification.** It is intended to be an end-to-end example of what a data science and machine learning **proof of concept** might look like.
+This notebook will introduce some foundation machine learning and data science concepts by exploring %RBC prints and Hemoglobin level for classifying whether an individual tends to have anaemia or not. It is intended to be an end-to-end example of what a data science and machine learning **proof of concept** might look like.
 
-Using machine learning techniques, I have developed a model to predict banana quality based on historical data.
+Using machine learning techniques, I have developed a model to predict anaemia based on historical data. Each row in the dataset corresponds to an individual case with various features.
 
 ### 📂 Data Source:
-Banana Quality - Kaggle
+Anaemia Prediction using Hb, Sex, %RBC Prints - Kaggle
 
-The tabular dataset holds numerical attributes describing the quality of bananas, including their size, weight, sweetness (Brix), acidity (pH), softness, harvest time, and ripeness. 
+This dataset is curated to facilitate the development of machine learning models aimed at predicting anaemia from Image Pixels and Hemoglobin Levels.
 
 ### 🛠️ 𝐓𝐞𝐜𝐡 𝐒𝐭𝐚𝐜𝐤:
 - Python
@@ -16,6 +16,7 @@ The tabular dataset holds numerical attributes describing the quality of bananas
 - Scikit-learn for model building
 - Matplotlib and Seaborn for data visualization
 - Jupyter Notebook for interactive development
+- Streamlit for deploying the model in a webapp
 
 ### ✨ Highlights:
 - Comprehensive dataset analysis 
@@ -28,3 +29,4 @@ The tabular dataset holds numerical attributes describing the quality of bananas
 - Feature engineering
 - Model training and evaluation
 - Visualisation of results
+- Deploying model in a webapp
