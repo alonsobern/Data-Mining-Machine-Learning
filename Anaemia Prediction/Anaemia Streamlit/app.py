@@ -15,7 +15,7 @@ with col1:
     red_pixel = st.slider('Red Pixel(%)', 0.0, 100.0, 0.5)
     green_pixel = st.slider('Green Pixel(%)', 0.0, 100.0, 0.5)
     blue_pixel = st.slider('Blue Pixel(%)', 0.0, 100.0, 0.5)
-    hb = st.slider('Heamoglobin Level (g/dL)', 2.0, 20.0)
+    hb = st.slider('Hemoglobin Level (g/dL)', 2.0, 20.0)
 with col2:
     st.text('Categorical')
     sex = st.radio('Sex',['M','F'])
