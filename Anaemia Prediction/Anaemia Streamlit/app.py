@@ -33,4 +33,12 @@ result = 0
 if st.button('Get Anaemia Prediction'):
     result = predict(pd.DataFrame(data=[[sex, red_pixel, green_pixel, blue_pixel, hb]],
                               columns=['sex','red_pixel','green_pixel','blue_pixel','hb']))[:,1]
-    st.text(f"Anaemia Probability: {round(float(result)*100,4)}%")
+    
+    result = round(float(result)*100,4)
+
+    if result > 60:
+        st.warning("You have high probability to get anaemia.")
+    else:
+        st.success("You do not have high probability to get anaemia.")
+   
+    st.text(f"Anaemia Probability: {result}%")
